@@ -63,7 +63,7 @@ function styles() {
       .pipe(browserSync.stream())
 }
 
-function build() {
+function building() {
   return src([
     'app/css/style.min.css',
     'app/fonts/**/*',
@@ -85,9 +85,11 @@ exports.browsersync = browsersync;
 exports.scripts = scripts;
 exports.images = images;
 exports.cleanDist = cleanDist;
+exports.building = building;
 
 
-exports.build = series(cleanDist, images, build);
+
+exports.build = series(cleanDist, images, building);
 exports.default = parallel(styles ,scripts ,browsersync, watching);
 
 
