@@ -9,6 +9,10 @@ body{
 	line-height: 27px;
 	font-weight: 400;
 	color: $default;
+	// убираем скролл от 100% по оси х
+	overflow-x: hidden;
+	// указываем мин ширину
+	min-width: 320px;
 }
 
 .wrapper {
