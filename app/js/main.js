@@ -5,4 +5,15 @@ $(function () {
     $('.rightside-menu__close').on('click', function(){
         $('.rightside-menu').addClass('rightside-menu--close');
     });
+
+    // активируем слайдер
+    $('.top__slider').slick({
+        dots: true,
+        arrows: false,
+        // плавное изменение
+        fade: true,
+        // изменение картинки каждые 3 сек
+        autoplay: true
+    });
+
 })
