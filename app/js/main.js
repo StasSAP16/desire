@@ -15,5 +15,11 @@ $(function () {
         // изменение картинки каждые 3 сек
         autoplay: true
     });
+    // mixitup
+    var mixer = mixitup('.gallery__inner', {
+        load: {
+            filter: '.living'
+        }
+    });
 
 })
