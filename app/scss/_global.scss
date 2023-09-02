@@ -63,6 +63,26 @@ body{
 	}
 }
 
+.info-email{
+	font-weight: 600;
+	font-size: 14px;
+	color: $title;
+	// делаем его строчно блочным элементом что б сработал марджин
+	display: inline-block;
+	margin-bottom: 22px;
+	padding-left: 30px;
+	position: relative;
+	&::before{
+		content: '';
+		background-image: url(../images/envelope.svg);
+		position: absolute;
+		left: 0;
+		top: 8px;
+		width: 16px;
+		height: 12px;
+	}
+}
+
 
 
 

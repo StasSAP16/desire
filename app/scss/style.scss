@@ -22,6 +22,8 @@
 .breadcrumbs{
     background: rgba(#DFDFDF, .5);
     padding: 13px 14px;
+    position: relative;
+    z-index: 999;
     &__list{
         display: flex;
     }
@@ -620,6 +622,11 @@
 
 }
 
+.map{
+    margin-top: -53px;
+    margin-bottom: 50px;
+}
+
 .footer{
     &__content{
         background: #DFDFDF;
@@ -641,25 +648,6 @@
     &__info-text{
         margin-bottom: 16px;
         max-width: 475px;
-    }
-    &__info-email{
-        font-weight: 600;
-        font-size: 14px;
-        color: $title;
-        // делаем его строчно блочным элементом что б сработал марджин
-        display: inline-block;
-        margin-bottom: 22px;
-        padding-left: 30px;
-        position: relative;
-        &::before{
-            content: '';
-            background-image: url(../images/envelope.svg);
-            position: absolute;
-            left: 0;
-            top: 8px;
-            width: 16px;
-            height: 12px;
-        }
     }
     &__form{
         display: flex;
