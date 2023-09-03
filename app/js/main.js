@@ -15,6 +15,13 @@ $(function () {
         // изменение картинки каждые 3 сек
         autoplay: true
     });
+    // слайдер из странички contact
+    $('.contact-slider').slick({
+        slidesToShow: 10,
+        slidesToScroll: 10,
+        dots: true,
+        arrows: false,
+    });
     // mixitup
     var mixer = mixitup('.gallery__inner', {
         load: {
