@@ -6,6 +6,12 @@ $(function () {
         $('.rightside-menu').addClass('rightside-menu--close');
     });
 
+    // для header__btn-menu при 540px (копируем 1 верхний абзац кода)
+    $('.header__btn-menu').on('click', function(){
+        $('.menu').toggleClass('menu--open');
+    });
+    
+
     // активируем слайдер
     $('.top__slider').slick({
         dots: true,

@@ -17,6 +17,9 @@
         padding: 0;
         cursor: pointer;
     }
+    &__btn-menu{
+        display: none;
+    }
 }
 
 .breadcrumbs{
@@ -1275,3 +1278,5 @@
         padding: 42px 0 41px;
     }
 }
+
+@import 'media';
