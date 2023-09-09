@@ -10,6 +10,11 @@ $(function () {
     $('.header__btn-menu').on('click', function(){
         $('.menu').toggleClass('menu--open');
     });
+
+    // переопределяем элементы для раздела 
+    if($(window).width() < 651){
+        $('.works-path__item--measuring').appendTo($('.works-path__items--box'));
+    }
     
 
     // активируем слайдер
