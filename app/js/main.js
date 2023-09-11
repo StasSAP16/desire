@@ -72,7 +72,7 @@ $(function () {
         breakpoint: 540,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 6,
+          slidesToScroll: 1,
         },
       },
     ],

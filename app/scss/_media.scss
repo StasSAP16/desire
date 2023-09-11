@@ -2,6 +2,7 @@
     .contact-slider{
         &__img{
             width: 100%;
+            padding: 2px;
         }
     }
 }
@@ -31,7 +32,7 @@
   }
   .contact-slider{
     &__img{
-        height: 240px;
+        height: 100%;
     }
   }
 }
@@ -367,6 +368,9 @@
   .slick-dots li {
     padding: 0 2px;
     margin: 0 2px;
+  }
+  .contact-slider {
+    padding-bottom: 30px;
   }
 }
 
